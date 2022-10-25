@@ -374,7 +374,6 @@ html{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .clb{
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,13 +383,18 @@ html{
 }
 .section{
     position: relative;
-    height: 450px;
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 10px 0;
 }
 .swiper{
-    width: 950px;
+    width: 1000px;
+    
+}
+.section .general-title{
+    padding: 20px 0;
+    color: #fff;
 }
 @keyframes gradient {
     0% {
@@ -503,11 +507,14 @@ html{
 .clb-card-button button:hover{
     background: #6616d0;
 }
+.clb .swiper-pagination-bullets{
+    bottom: 5px !important;
+}
 .clb .swiper-pagination-bullet{
     height: 7px;
     width: 26px;
     border-radius: 25px;
-    background: #7d2ae8;
+    background: #fff;
   }
   
 
@@ -864,7 +871,12 @@ html{
     bottom: 0;
     right: 0;
     left: 0;
-    
+    box-shadow:
+        -28px 27px 37.5px rgba(0, 0, 0, 0.53),
+        10px -19px 37.5px rgba(255, 255, 255, 0.038),
+        inset 4px -4px 8px rgb(0, 0, 0, 0.53),
+        inset -5px 5px 12px #ffffff;
+    ;
     align-items: center;/* con nằm giữa chiều cao cha     */
     justify-content: center;/* nằm giữa chiều ngang */
     
@@ -1174,9 +1186,9 @@ html{
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, #000 0px 2px 16px 0px;
-    align-items: center;/* con nằm giữa chiều cao cha     */
-    justify-content: center;/* nằm giữa chiều ngang */
+    
+    align-items: center;
+    justify-content: center;
     z-index: 10;
     display: none;
 }
@@ -1186,6 +1198,12 @@ html{
     height: 500px;
     border-radius: 15px 15px;
     position: relative;
+    box-shadow:
+        -28px 27px 37.5px rgba(0, 0, 0, 0.53),
+        10px -19px 37.5px rgba(255, 255, 255, 0.038),
+        inset 4px -4px 8px rgb(0, 0, 0, 0.53),
+        inset -5px 5px 12px #ffffff;
+    ;
 }
 .modal-login-close{
     font-size: 20px;
@@ -1332,6 +1350,7 @@ html{
     align-items: center; 
     justify-content: center;
     display: none;
+    
 }
 .modal-signin .box-login{
     width: 900px;
@@ -1339,6 +1358,12 @@ html{
     border-radius: 15px 15px;
     position: relative;
     background-color: #fff;
+    box-shadow:
+        -28px 27px 37.5px rgba(0, 0, 0, 0.53),
+        10px -19px 37.5px rgba(255, 255, 255, 0.038),
+        inset 4px -4px 8px rgb(0, 0, 0, 0.53),
+        inset -5px 5px 12px #ffffff;
+;
 }
 .modal-login-close{
     font-size: 20px;
@@ -1550,6 +1575,33 @@ html{
     border-radius: 50%;
     border:1px solid #555;
     transition: 0.5s;
-}.buttons button:hover{
+}
+.buttons button:hover{
     background-color: #bac383;
+}
+
+
+
+
+
+/* Len top */
+
+.len-top {
+    display:none;
+    bottom: 10%; 
+    right: 10px; 
+    cursor: pointer;  
+    position: fixed; 
+    z-index: 1000
+    ;}
+.len-top .top-len {
+    background: red;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.len-top .len-top-icon {
+    color: white;
+    font-size: 20px !important;
 }

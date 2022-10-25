@@ -152,10 +152,11 @@
                     </div>
                 </div>
             </div>
-            <div class="clb"> <!-- body  -->
+            <div class="clb"> 
                 <div class="section mw">
-                    <div class="clb-team swiper mySwiper"> <!-- container  -->
-                        <div class="clb-content swiper-wrapper"><!-- clb-content  -->
+                    <div class="clb-team swiper mySwiper"> 
+                        <h1 class="general-title center-item">BAN CHỦ NHIỆM CLB</h1>
+                        <div class="clb-content swiper-wrapper">
                             <div class="clb-card swiper-slide">
                                 <div class="clb-card-content">
                                     <div class="clb-card-img">
@@ -284,10 +285,10 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
-                 <!-- Swiper JS -->
+
                 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-                <!-- Initialize Swiper -->
+
                 <script>
                     var swiper = new Swiper(".mySwiper", {
                         slidesPerView: 3,
@@ -755,7 +756,7 @@
                     
                 </div>
             </div>
-            <div class="feedback">
+            <!-- <div class="feedback">
                 <div class="row g-0 height-100">
                     <div class="col-xl-3 col-lg-4 col-sm-6 item-feed">
                         <div class="hover-img">
@@ -848,7 +849,7 @@
                         <img src="./assets/css/img/Feedback//IMG_0690.JPG" height="100%" width="100%" alt="">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="footer">
                 <div class="bg-foot center-item">
                     <div class="main-foot mw">
@@ -881,6 +882,22 @@
                     </div>
                 </div>
             </div>
+            <div class="len-top">
+                <a href=""></a>
+            </div>
+            <script src="http://code.jquery.com/jquery-latest.js"></script>
+            <script>
+
+                $(function(){
+                $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) $(".len-top").fadeIn();
+                else $(".len-top").fadeOut();
+                });
+                $(".len-top").click(function () {
+                $("body,html").animate({scrollTop: 0}, "slow");
+                });
+                });
+            </script>
             <div class=" modal-login center-item js-modal-login">
                 <div class="box-login js-modal-box-login center-item">
                     <div class="modal-login-close js-modal-login-close">

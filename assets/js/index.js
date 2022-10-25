@@ -1,7 +1,4 @@
-
-/*--    
-        Tabs
-    -----------------------------------*/  
+// Tab
     const tabs = document.querySelectorAll('[data-tab-target]')
     const tabContents = document.querySelectorAll('.tab-table-active')
 
@@ -88,13 +85,3 @@ const BoxSingin = document.querySelector('.js-modal-box-signin')
         event.stopPropagation()
     })
 
-// Test Slider
-    
-document.getElementById('next').onclick = function(){
-    let lists = document.querySelectorAll('.item');
-    document.getElementById('slide').appendChild(lists[0]);
-}
-document.getElementById('prev').onclick = function(){
-    let lists = document.querySelectorAll('.item');
-    document.getElementById('slide').prepend(lists[lists.length - 1]);
-}
