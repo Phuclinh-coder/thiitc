@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
         <title>Câu lạc bộ ITC</title>
         <script
@@ -135,20 +136,20 @@
             <div class="clb-member center-item">
                 <div class="member mw">
                     <div class="list-member">
-                        <h1 class="h-1">200</h1>
+                        <h1 class="h-1">125</h1>
                         <p>Thành viên</p>
                     </div>
                     <div class="list-member">
-                        <h1 class="h-2">175</h1>
-                        <p>Người tham gia</p>
+                        <h1 class="h-2">20+</h1>
+                        <p>Cuộc thi</p>
                     </div>
                     <div class="list-member">
-                        <h1 class="h-3">25</h1>
-                        <p>Mới gia nhập</p>
+                        <h1 class="h-3">10+</h1>
+                        <p>Phong trào</p>
                     </div>
                     <div class="list-member">
-                        <h1 class="h-4">50</h1>
-                        <p>Đang hoạt động</p>
+                        <h1 class="h-4">5+</h1>
+                        <p>Khóa học</p>
                     </div>
                 </div>
             </div>
@@ -883,8 +884,18 @@
                 </div>
             </div>
             <div class="len-top">
-                <a href=""></a>
+                <div class="top-len">
+                    <i class="bi bi-arrow-up len-top-icon"></i>
+                </div>
+                
             </div>
+            <div class="mess">
+                <div class="mess-ac">
+                    <img src="./assets/css/img/fb.png" alt="">
+                </div>
+                
+            </div>
+            <!-- Con tro -->
             <script src="http://code.jquery.com/jquery-latest.js"></script>
             <script>
 
@@ -898,6 +909,19 @@
                 });
                 });
             </script>
+            <script>
+
+                $(function(){
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 200) $(".mess").fadeIn();
+                        else $(".mess").fadeOut();
+                });
+                $(".mess").click(function () {
+                $("clb").animate({scrollTop: 0}, "slow");
+                });
+                });
+            </script>
+            <!-- end con tro -->
             <div class=" modal-login center-item js-modal-login">
                 <div class="box-login js-modal-box-login center-item">
                     <div class="modal-login-close js-modal-login-close">
@@ -1000,6 +1024,34 @@
                     </div> 
                 </div>
             </div>
+            <!-- Header 
+            <script src="https://code.jquery.com/jquery-3.6.1.js">
+            </script>
+            <script>
+                $(document).ready(function(){
+                    $(window).scroll(function(){
+                        if($(this).scrollTop() < 500){
+                            $('header').addClass('sticky')
+                        }else{
+                            $('header').remove('sticky')
+                        }
+                    })
+                })
+            </script> -->
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var header = document.getElementById("header");
+                var sticky = header.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                  } else {
+                    header.classList.remove("sticky");
+                  }
+                }
+                </script>
         </div>
     </body>
     <script src="./assets/js/index.js"></script>
