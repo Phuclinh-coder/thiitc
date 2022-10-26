@@ -1523,8 +1523,9 @@ header{
 }
 .member-best .main-best h1{
     position: absolute;
-    top: 30px;
+    top: 35px;
 }
+
 .container{
     position: absolute;
     left:50%;
@@ -1535,6 +1536,7 @@ header{
     padding:50px;
     background-color: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
+    margin: 20px 0;
 }
 #slide{
     width:max-content;
@@ -1682,4 +1684,62 @@ header{
 .mess img{
     width: 60px;
     height: 60px;
+}
+
+.mess:hover .show-mess{
+    display: flex;
+}
+
+.show-mess{
+    position: absolute;
+    width: 375px;
+    border-radius: 10px 10px;
+    top: -23rem;
+    right: 1.2rem;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.show-mess .top-mess{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.show-mess .top-mess img{
+    width: 100px;
+    height: 100px;
+}
+.show-mess .icon{
+    display: flex;
+    align-items: center;
+}
+
+.show-mess .icon .icon-one{
+    right: 0;
+    margin: 0 10px;
+}
+.box-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.show-mess .content-mess .c1{
+    margin: 40px 0;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.show-mess .chat-mess{
+    margin-top: 30px;
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 10px 10px;
+    margin-bottom: 20px;
+    
 }
